@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.papelariaencantada.cadastroproduto.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <AnchorPane fx:id="telaprincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="614.0">
+         <children>
+            <GridPane layoutY="34.0" prefHeight="34.0" prefWidth="592.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.39996337890625" minWidth="10.0" prefWidth="90.20001220703125" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.4000244140625" minWidth="10.0" prefWidth="73.39998779296874" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.4000244140625" minWidth="10.0" prefWidth="54.79999084472658" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.6000091552734" minWidth="10.0" prefWidth="375.6000091552734" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="lbl_idproduto" text="ID PRODUTO" GridPane.halignment="CENTER" />
+                  <Label fx:id="lbl_nome" text="NOME" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                  <TextField fx:id="txt_idproduto" alignment="CENTER" prefHeight="26.0" prefWidth="78.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="txt_nome" prefHeight="26.0" prefWidth="356.0" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane layoutY="68.0" prefHeight="157.0" prefWidth="392.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.5999755859375" minWidth="10.0" prefWidth="88.7999755859375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="466.3999877929687" minWidth="10.0" prefWidth="303.2000244140625" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="lbl_fornecedor" prefHeight="18.0" prefWidth="79.0" text=" FORNECEDOR" GridPane.halignment="CENTER" />
+                  <Label fx:id="lbl_marca" text="MARCA" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Label fx:id="lbl_categoria" text="CATEGORIA" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <Label fx:id="lbl_ultcompra" text="ULT COMPRA" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <TextField fx:id="txt_ultcompra" prefHeight="22.0" prefWidth="394.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="txt_categoria" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="txt_marca" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txt_fornecedor" prefHeight="26.0" prefWidth="464.0" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutY="242.0" prefHeight="54.0" prefWidth="592.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.7999755859375" minWidth="10.0" prefWidth="82.20003662109374" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.99996337890624" minWidth="10.0" prefWidth="126.99996337890624" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.20001220703125" minWidth="10.0" prefWidth="10.400000000000006" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.20001220703125" minWidth="10.0" prefWidth="140.20001220703125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.2000244140625" minWidth="8.999987792968739" prefWidth="12.999987792968739" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.1999633789062" minWidth="10.0" prefWidth="206.3999755859375" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="lbl_valores" text="VALORES " GridPane.halignment="CENTER" />
+                  <Label fx:id="lbl_qntd" text="QUANTIDADE " GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <TextField fx:id="txt_compra" prefHeight="26.0" prefWidth="91.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="txt_venda" prefHeight="26.0" prefWidth="112.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="txt_qntd" prefHeight="26.0" prefWidth="210.0" GridPane.columnIndex="5" />
+                  <Label fx:id="lbl_compra" text="PRECO COMPRA" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Label fx:id="lbl_venda" text="PRECO VENDA" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Label fx:id="lbl_mensagem" layoutX="10" layoutY="10" />
+            <Label layoutX="9.0" layoutY="5.0" text="CADASTRO DE PRODUTO" />
+            <Button fx:id="btn_editar" layoutX="18.0" layoutY="321.0" mnemonicParsing="false" onAction="#editar" prefHeight="34.0" prefWidth="74.0" text="EDITAR" />
+            <Button fx:id="btn_salvar" layoutX="122.0" layoutY="321.0" mnemonicParsing="false" onAction="#salvar" prefHeight="33.0" prefWidth="73.0" text="SALVAR" />
+            <Button fx:id="btn_sair" layoutX="508.0" layoutY="321.0" mnemonicParsing="false" onAction="#sair" prefHeight="34.0" prefWidth="74.0" text="SAIR" />
+            <ImageView fx:id="imagem" fitHeight="148.0" fitWidth="167.0" layoutX="415.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
